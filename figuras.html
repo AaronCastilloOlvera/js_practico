@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Figuras geometricas | Curso Practico</title>
+
+</head>
+<body>
+
+   <div class="container mt-5">
+
+        <header>
+            <h1>Figuras geometricas</h1>
+        </header>
+
+        <section>
+        
+            <div class="form-floating mt-5 mb-3">
+                <form action="InputCuadrado">
+                    <h4>Cuadrado</h4>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-floating mb-2">
+                                <input id="InputCuadrado" type="number" class="form-control" id="floatingInput" placeholder="Lado Cuadrado">
+                                <label for="floatingInput"> Lado de Cuadrado.</label>
+                            </div>    
+                        </div>
+                        <div class="col-6">
+                            <button type="button" class="btn btn-success" onclick="calcularPerimetroCuadrado()">  Perimetro </button>
+                            <button type="button" class="btn btn-success" onclick="calcularAreaCuadrado()"> Area </button>
+                        </div>  
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-floating mt-5 mb-3">
+                <form action="InputRadioCirculo">
+                    <h4>Circulo </h4>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-floating mb-2">
+                                <input id="InputRadioCirculo" type="number" class="form-control" id="floatingInput" placeholder="Lado Cuadrado">
+                                <label for="floatingInput"> Radio de Circulo.</label>
+                            </div>    
+                        </div>
+                        <div class="col-6">
+                            <button type="button" class="btn btn-danger" onclick="calcularDiametroCirculo()">  Diametro </button>
+                            <button type="button" class="btn btn-danger" onclick="calcularPerimetroCirculo()"> Area </button>
+                            <button type="button" class="btn btn-danger" onclick="calcularAreaCirculo()"> Area </button>
+                            
+                        </div>  
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-floating mt-4 mb-3">
+                <form action="InputTrianguloLado InputTrianguloAltura">
+                    <h4>Triangulo Equilaterio</h4>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-floating mb-2">
+                                <input id="InputTrianguloLado" type="number" class="form-control" id="floatingInput" placeholder="Lado Triangulo">
+                                <label for="floatingInput"> Lado de Triangulo.</label>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="form-floating mb-2">
+                                <input id="InputTrianguloAltura" type="number" class="form-control" id="floatingInput" placeholder="Altura Triangulo">
+                                <label for="floatingInput"> Base de Triangulo.</label>
+                            </div>        
+                        </div>
+                    </div>
+                
+                    <div class="row">
+                        <div class="col">
+                            <button type="button" class="btn btn-warning" onclick="calcularPerimetroTriangulo()">  Perimetro </button>
+                            <button type="button" class="btn btn-warning" onclick="calcularAreaTriangulo()"> Area </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-floating mt-4 mb-3">
+                <form action="idtrianguloGrandeLadoA idtrianguloGrandeLadoB idtrianguloGrandeLadoBase">
+                    <h4>Triangulo Isóseceles</h4>
+
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="form-floating mb-2">
+                                <input id="idtrianguloGrandeLadoA" type="number" class="form-control" id="floatingInput" placeholder="Lado Triangulo">
+                                <label for="floatingInput"> Lado 1</label>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <div class="form-floating mb-2">
+                                <input id="idtrianguloGrandeLadoB" type="number" class="form-control" id="floatingInput" placeholder="Altura Triangulo">
+                                <label for="floatingInput"> Lado 2</label>
+                            </div>        
+                        </div>
+                        
+                        <div class="col-4">
+                            <div class="form-floating mb-2">
+                                <input id="idtrianguloGrandeLadoBase" type="number" class="form-control" id="floatingInput" placeholder="Altura Triangulo">
+                                <label for="floatingInput"> Lado 3</label>
+                            </div>        
+                        </div>
+
+                    </div>
+                
+                    <div class="row">
+                        <div class="col">
+                            <button type="button" class="btn btn-primary" onclick="alturaTrianguloIsosceles()">  Altura </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+    </div>
+   
+
+    <script src="figuras.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+</body>
+</html>
